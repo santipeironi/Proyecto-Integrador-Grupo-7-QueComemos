@@ -1,0 +1,198 @@
+/* ESTILOS DE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BARRA DE NAVEGACIÓN */
+
+
+.barra-navegacion {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    background-color: rgb(161, 22, 64);
+    color: white;
+    justify-content: space-between;
+}
+
+.logo-empresa {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    align-self: baseline;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+
+nav ul li {
+    list-style: none;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    background-color: hotpink;
+    border-radius: 12%;
+}
+
+
+nav ul li a:active {
+    background-color: magenta;
+    border-radius: 12%;
+}
+
+
+.nav-item > a {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+
+/* BARRA DE NAVEGACIÓN - BOTÓN DE INICIO DE SESIÓN */
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.contenedor p {
+    margin: 30px 0;
+    font-size: 2.5em;
+}
+.btn {
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: crimson;
+    border: none;
+    color: rgb(244, 239, 248);
+    transition: all 0.5s;
+}
+.btn:hover {
+    background-color: brown;
+}
+.contenedor-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-modal.mostrar {
+    background-color: black;
+    z-index: 1;
+    opacity: 0.9;
+}
+.contenedor-modal .modal {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 400px;
+    padding: 50px;
+    background-color: aliceblue;
+    opacity: 1;
+    display: flex;
+    margin-top: 40px;
+    color: black;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+form input {
+    margin: 15px;
+    padding: 10px;
+    color: rgb(165, 42, 124);
+}
+.contenedor-mod {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-mod.mostrar {
+    background-color: black;
+    z-index: 1;
+    opacity: 0.9;
+}
+.contenedor-mod .modal {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 400px;
+    padding: 50px;
+    background-color: aliceblue;
+    opacity: 1;
+    display: flex;
+    margin-top: 40px;
+    color: black;
+}
+
+/* CUERPO - TÍTULOS PRINCIPALES */
+
+
+.titulos-principales {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Reem Kufi', sans-serif;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.titulo-grande {
+    font-size: 2rem;
+}
+
+
+
