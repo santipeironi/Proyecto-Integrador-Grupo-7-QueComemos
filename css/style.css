@@ -1,0 +1,116 @@
+/* ESTILOS DE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BARRA DE NAVEGACIÓN */
+
+
+.barra-navegacion {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    background-color: rgb(161, 22, 64);
+    color: white;
+    justify-content: space-between;
+}
+
+.logo-empresa {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    align-self: baseline;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+
+nav ul li {
+    list-style: none;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    background-color: hotpink;
+    border-radius: 12%;
+}
+
+
+nav ul li a:active {
+    background-color: magenta;
+    border-radius: 12%;
+}
+
+
+.nav-item > a {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+
+/* BARRA DE NAVEGACIÓN - BOTÓN DE INICIO DE SESIÓN */
+
+.botonInicio {
+    background-color: rgb(156, 13, 73);
+    height: 5.5vh;
+    font-size: 1.15rem;
+    font-family: 'Reem Kufi', sans-serif;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+.botonInicio:hover {
+    background-color: rgb(250, 41, 128);
+}
+
+
+.botonInicio:active {
+    background-color: rgb(255, 103, 166);
+}
+
+
+/* CUERPO - TÍTULOS PRINCIPALES */
+
+
+.titulos-principales {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Reem Kufi', sans-serif;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.titulo-grande {
+    font-size: 2rem;
+}
+
+
+
