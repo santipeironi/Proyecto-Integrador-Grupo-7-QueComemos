@@ -39,8 +39,8 @@
                 <div class="modal">
                     <h2>Ingrese Sus Datos</h2>
                     <form action="">
-                        <input type="text" placeholder="apellido y nombre" id="nombre">
-                        <input type="number" placeholder="dni" id="dni">
+                        <input type="text" placeholder="apellido y nombre" id="nombre" maxlength="30" minlength="5">
+                        <input type="number" placeholder="dni" id="dni" max="99999999" min="1000000">
                         <input type="email" placeholder="email" id="email">
                         <input type="number" placeholder="telefono" id="telefono">
                         <button class="btn" type="submit" id="ok">aceptar</button>
@@ -68,7 +68,7 @@
               <img src="/images/carrusel/promohamburguesa.png" alt="Second Slide" style="width:100%;" >
             </div>
             <div class="carousel-item">
-              <img src="/images/carrusel/promopizza.png" alt="Third Slide"style="width:100%;" >
+              <img src="/images/carrusel/promopizza.png" alt="Third Slide"style="width:100%;">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
@@ -80,20 +80,11 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-       </div>
-      </section>
-      
+       
         <label>Buscar promociones <input type="text" id="Name" name="Name" /></label>
         <label>Categorias <input type="text" id="Name" name="Name" /></label>
-        
-    	<aside>
-    		<p><strong>Enlaces Recomendados</strong></p>
-    		<a href="https://www.selecciones.com.ar/"target="_blank">Selecciones.com</a>
-    		<a href="https://saborgourmet.com/"target="_blank">Cómo elegir el mejor restaurante.com</a>
-    		<a href="https://www.bodegasmezquita.com/"target="_blank">Consejos para disfrutar de tu Cena de Empresa</a>
-    	</aside>
-
-     <footer>
+   
+          <footer>
             <nav class="barra-navegacion">
                     <li class="nav-item"><a href="#">Direccion</a></li>
                     <li class="nav-item"><a href="#">Redes sociales</a></li>
