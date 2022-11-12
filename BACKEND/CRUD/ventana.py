@@ -20,12 +20,12 @@ class Ventana(Frame):
         self.habilitarBotonGuardar("disabled")
         self.id = -1
         
-        
     # Llenar los Datos y mostrarlos en el Treeview
     def llenarDatos(self):
         datos = self.usuarios.consulta_usuarios()
         for row in datos:
-                    self.grid.insert("", END, text=row[0], values=(row[0], row[1], row[2], row[3], row[4], row[5]))
+            DNI = row[0]
+            self.grid.insert("", END, text=DNI, values=(row[1], row[2], row[3], row[4], row[5]))
         print(self.usuarios)
                     
     # Habilitar y Deshabilitar Cajas de Texto
@@ -124,10 +124,16 @@ class Ventana(Frame):
         clave = self.grid.item(selected, 'text')
         self.id = clave
         
-        if self.id == -1:
+        pregunta_insertar = messagebox.askquestion('Insertar: ', '¿Desea ud. insertar un registro?')
+        
+        if pregunta_insertar == messagebox.YES:
             self.usuarios.insertar_usuario(DNI, nombre, apellido, domicilio, mail, telefono)
             messagebox.showinfo('Insertar: ', 'Su registro fue insertado correctamente.')
+            
+        # Acá hay un problema
         else:
+            self.habilitarCajas("normal")
+            self.habilitarBotonGuardar('normal')
             self.usuarios.modificar_usuario(self.id, nombre, apellido, domicilio, mail, telefono, DNI)
             self.id = -1
             messagebox.showinfo('Modificar: ', 'Su registro fue modificado correctamente.')
