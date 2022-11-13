@@ -1,2 +1,6 @@
+Aportes Teo Londero
 Se arreglo menu desplazable, el cual se habia desconfigurado.
 Se publico el sitio web con dominio wordpress.
+Se creo subpagina para tecnologia "GIT". https://wordpress.com/page/grupocom7.wordpress.com/488
+Se Modifico el texto en ingles de algunas entradas de la wiki, mayormente la traducida en ingles para mejorar la redaccion
+Se Corrigieron Fechas de Meetings en la wiki.
