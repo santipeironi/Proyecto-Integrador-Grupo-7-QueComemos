@@ -3,8 +3,7 @@ Propuesta de página de reseñas de usuarios para restaurantes y servicios gastr
 
 ## Participantes del equipo de trabajo ✒️     
 * Romero, Lucas Emanuel (Developer)    
-* Londero, Quimey Waldemar Teo (Developer)    
-* García Manzur, Mario (Developer)     
+* Londero, Quimey Waldemar Teo (Developer)  
 * Romero Moreno, Oscar Alfonso (Developer)     
 * Gastón Méndez, Andrés (Developer)     
 * Monzón, Silvia Carina (Developer)     
