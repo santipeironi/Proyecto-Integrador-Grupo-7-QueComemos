@@ -38,6 +38,9 @@ class Usuario:
         cursor.close()    
         return datos
     
+    
+    # REVISAR ACÁ, PORQUE NO INSERTA BIEN, PORQUE INSERTA DOS VECES EL DNI Y NO PASA CORRECTAMENTE LOS DATOS.
+    # PUEDE SER UN ERROR POSICIONAL EN LOS PARÁMETROS.
     def insertar_usuario(self,dni, nombre, apellido, domicilio, mail, telefono):
         cursor = self.conexion.cursor()
         sql='''INSERT INTO usuarios (id_dni, nombre, apellido, domicilio, mail, telefono) 
@@ -57,10 +60,10 @@ class Usuario:
         cursor.close()
         return n   
 
-    def modificar_usuario(self, id_dni, nombre, apellido, domicilio, mail, telefono, DNI):
+    def modificar_usuario(self, DNI, nombre, apellido, domicilio, mail, telefono):
         cursor = self.conexion.cursor()
         sql ='''UPDATE usuarios SET id_dni='{}', nombre='{}', apellido='{}',
-        domicilio='{}',  mail='{}',  telefono='{}' WHERE id_dni={}'''.format(id_dni, DNI, nombre, apellido, domicilio, mail, telefono, id_dni)
+        domicilio='{}',  mail='{}',  telefono='{}' WHERE id_dni={}'''.format(DNI, DNI, nombre, apellido, domicilio, mail, telefono, DNI)
         cursor.execute(sql)
         n = cursor.rowcount
         self.conexion.commit()    

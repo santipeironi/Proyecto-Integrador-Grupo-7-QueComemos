@@ -33,7 +33,7 @@ class Usuario:
         
     def buscar_usuario(self, DNI):
         cursor = self.conexion.cursor()
-        sql = "SELECT * FROM countries WHERE Id = {}".format(DNI)
+        sql = "SELECT * FROM usuarios WHERE Id = {}".format(DNI)
         cursor.execute(sql)
         datos = cursor.fetchone()
         cursor.close()    
@@ -58,10 +58,10 @@ class Usuario:
         cursor.close()
         return n   
 
-    def modifica_pais(self, DNI, nombre, apellido, domicilio, mail, telefono):
+    def modifica_usuario(self, DNI, nombre, apellido, domicilio, mail, telefono):
         cursor = self.conexion.cursor()
         sql ='''UPDATE usuarios SET id_dni='{}', nombre='{}', apellido='{}',
-        domicilio='{}',  mail='{}',  telefono='{}' WHERE id_dni={}'''.format(DNI, nombre, apellido, domicilio, mail, telefono)
+        domicilio='{}',  mail='{}',  telefono='{}' WHERE id_dni={}'''.format(DNI, nombre, apellido, domicilio, mail, telefono, DNI)
         cursor.execute(sql)
         n = cursor.rowcount
         self.conexion.commit()    
