@@ -57,8 +57,8 @@
   /* BARRA DE NAVEGACIÓN - BOTÓN DE INICIO DE SESIÓN */
   
   .contenedor {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
     text-align: center;
   }
   .contenedor p {
@@ -74,38 +74,8 @@
   .btn:hover {
     background-color: rgb(231, 212, 212);
   }
-  .contenedor-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: 0;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenedor-modal.mostrar {
-    background-color: rgb(20, 10, 19);
-    z-index: 1;
-    opacity: 0.9;
-  }
   
-  .contenedor-modal .modal {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 450px;
-    padding: 100px;
-    background-color: rgb(161, 22, 64);
-    opacity: 100px;
-    top: 30px;
-    max-width: 400px;
-  }
+  
   .barra-navegacion form .btn {
     color: white;
     font-size: 1.2rem;
