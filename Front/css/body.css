@@ -4,13 +4,6 @@
 
 /* CUERPO - TÍTULOS PRINCIPALES */
 
-.contenedor-g {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1300px;
-  overflow: hidden;
-}
-
 .backgroundc {
     background: rgb(236,148,148);
     background: linear-gradient(90deg, rgba(236,148,148,1) 0%, rgba(231,96,96,1) 38%, rgba(228,129,129,1) 100%); 

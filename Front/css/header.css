@@ -1,3 +1,7 @@
+.header {
+  width: auto;
+}
+
 .barra-navegacion {
     display: flex;
     flex-flow: row wrap;
