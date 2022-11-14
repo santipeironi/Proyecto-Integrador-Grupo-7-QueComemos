@@ -1,21 +1,3 @@
-/* ESTILOS DE FONT */
-
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.contenedor-g{
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1300px;
-    overflow: hidden;  
-}
-
-/* BARRA DE NAVEGACIÓN */
-
 .barra-navegacion {
     display: flex;
     flex-flow: row wrap;
@@ -23,18 +5,18 @@
     background-color: rgb(161, 22, 64);
     color: white;
     justify-content: space-between;
-}
-
-.logo-empresa {
-    font-family: 'Reem Kufi', sans-serif;
+  }
+  
+  .logo-empresa {
+    font-family: "Reem Kufi", sans-serif;
     font-size: 2rem;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 15px;
     align-self: baseline;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     display: flex;
     justify-content: space-between;
     gap: 1.5em;
@@ -42,53 +24,53 @@ nav ul {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     list-style: none;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     background-color: hotpink;
     border-radius: 12%;
-}
-
-nav ul li a:active {
+  }
+  
+  nav ul li a:active {
     background-color: magenta;
     border-radius: 12%;
-}
-
-.nav-item > a {
+  }
+  
+  .nav-item > a {
     color: white;
     font-size: 1.2rem;
-    font-family: 'Reem Kufi', sans-serif;
-}
-
-/* BARRA DE NAVEGACIÓN - BOTÓN DE INICIO DE SESIÓN */
-
-.contenedor {
+    font-family: "Reem Kufi", sans-serif;
+  }
+  
+  /* BARRA DE NAVEGACIÓN - BOTÓN DE INICIO DE SESIÓN */
+  
+  .contenedor {
     width: 100%;
     height: 100%;
     text-align: center;
-}
-.contenedor p {
+  }
+  .contenedor p {
     margin: 30px 0;
     font-size: 2.5em;
-}
-.barra-navegacion ul .btn {
+  }
+  .barra-navegacion ul .btn {
     color: white;
     font-size: 1.2rem;
-    font-family: 'Reem Kufi', sans-serif;
+    font-family: "Reem Kufi", sans-serif;
     border-color: aliceblue;
-}
-.btn:hover {
+  }
+  .btn:hover {
     background-color: rgb(231, 212, 212);
-}
-.contenedor-modal {
+  }
+  .contenedor-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -101,44 +83,46 @@ nav ul li a:active {
     height: 100%;
     justify-content: center;
     align-items: center;
-}
-.contenedor-modal.mostrar {
+  }
+  .contenedor-modal.mostrar {
     background-color: rgb(20, 10, 19);
     z-index: 1;
     opacity: 0.9;
-    
-}
-.contenedor-modal .modal {
+  }
+  
+  .contenedor-modal .modal {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 450px;
     padding: 100px;
-    background-color: rgb(161, 22, 64);;
+    background-color: rgb(161, 22, 64);
     opacity: 100px;
     top: 30px;
     max-width: 400px;
-}
-.barra-navegacion form .btn {
+  }
+  .barra-navegacion form .btn {
     color: white;
     font-size: 1.2rem;
-    font-family: 'Reem Kufi', sans-serif;
+    font-family: "Reem Kufi", sans-serif;
     border-color: aliceblue;
-
-}
-form{
+  }
+  
+  form {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-form input {
+  }
+  
+  form input {
     margin: 15%;
     padding: 10%;
-}
-.contenedor-mod {
+  }
+  
+  .contenedor-mod {
     position: fixed;
     top: 0;
     left: 0;
@@ -151,89 +135,36 @@ form input {
     height: 100%;
     justify-content: center;
     align-items: center;
-}
-.contenedor-mod.mostrar {
+  }
+  
+  .contenedor-mod.mostrar {
     background-color: rgb(20, 10, 19);
     z-index: 1;
     opacity: 0.9;
-    
-}
-.contenedor-mod .modal {
+  }
+  
+  .contenedor-mod .modal {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 450px;
     padding: 100px;
-    background-color: rgb(161, 22, 64);;
+    background-color: rgb(161, 22, 64);
     opacity: 100px;
     top: 30px;
     max-width: 400px;
-    
-}
-form{
+  }
+  
+  form {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-form input {
+  }
+  
+  form input {
     margin: 15%;
     padding: 10%;
-}
-
-/* CUERPO - TÍTULOS PRINCIPALES */
-
-.titulos-principales {
-    display: flex;
-    flex-flow: row wrap;
-    font-family: 'Reem Kufi', sans-serif;
-    justify-content: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.titulo-grande {
-    font-size: 2rem;;
-}
-
-aside {background-color: rgb(181, 18, 18);
-}
-aside p {
-color: rgb(232, 214, 214);
-font-size: 1.5em;
-font-family: 'Reem Kufi', sans-serif; 
-text-align: center;
-}
-
-a {
-color: black;
-text-decoration: none;
-font-size: 1.5em;
-font-family: 'Reem Kufi', sans-serif;
-margin: 5px; 
-}
-
-a:link, a:visited {
-background-color: rgb(194, 59, 59);
-color: rgb(232, 214, 214);
-border: 2px solid rgb(181, 18, 18);
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-}
-
-a:hover, a:active {
-background-color: rgb(84, 4, 4);
-color: white;
-}
-@media screen and (max-width:700px) {
-    .nav-item {
-        width: 100%;
-    }
-    .btn{
-        width: 100%;
-    }
-    }
+  }

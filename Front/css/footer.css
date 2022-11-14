@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    padding: 0.2rem;
+  }
+  
+
+.footer_texto {
+    color: rgb(61, 40, 2);
+    font-size: 1.2em;
+}

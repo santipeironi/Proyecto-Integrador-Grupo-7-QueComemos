@@ -1,0 +1,78 @@
+/* ESTILOS DE FONT */
+
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+
+/* CUERPO - TÍTULOS PRINCIPALES */
+
+.contenedor-g {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1300px;
+  overflow: hidden;
+}
+
+.backgroundc {
+    background: rgb(236,148,148);
+    background: linear-gradient(90deg, rgba(236,148,148,1) 0%, rgba(231,96,96,1) 38%, rgba(228,129,129,1) 100%); 
+}
+
+.titulos-principales {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Reem Kufi", sans-serif;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.titulo-grande {
+  font-size: 2rem;
+}
+
+aside {
+  background-color: rgb(181, 18, 18);
+}
+
+aside p {
+  color: rgb(232, 214, 214);
+  font-size: 1.5em;
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Reem Kufi", sans-serif;
+  margin: 5px;
+}
+
+a:link,
+a:visited {
+  background-color: rgb(194, 59, 59);
+  color: rgb(232, 214, 214);
+  border: 2px solid rgb(181, 18, 18);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(84, 4, 4);
+  color: white;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .nav-item {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
