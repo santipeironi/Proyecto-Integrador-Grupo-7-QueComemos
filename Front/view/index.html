@@ -6,9 +6,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="apple-touch-icon" sizes="180x180" href="/Front/img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/Front/img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/Front/img/favicon-16x16.png">
-<link rel="manifest" href="/Front/img/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Front/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Front/img/favicon-16x16.png">
+  <link rel="manifest" href="/Front/img/site.webmanifest">
   <link rel="stylesheet" href="/Front/css/reset.css" />
   <link rel="stylesheet" href="/Front/css/header.css" />
   <link rel="stylesheet" href="/Front/css/body.css" />
@@ -33,83 +33,118 @@
         <li class="nav-item"><a href="/Front/view/locales.html">Locales</a></li>
       </ul>
 
-        <!-- formularios y botones de registro y inicio de sesion -->
-        <div class="contenedor">
-          <button class="btn" type="submit" id="lanzar-modal">Iniciar Sesión</button>
-          <button class="btn" type="submit" id="modal-regist">Registrarse</button>
-        </div>
-        <div class="contenedor-modal">
-          <div class="modal">
-            <h2>Login</h2>
-            <form action="">
-              <input type="text" placeholder="Usuario" id="usuario">
-              <input type="text" placeholder="Contraseña" id="contraseña">
-              <button class="btn" type="submit" id="entrar">Entrar</button>
-            </form>
+      <!-- Formularios de registro y login -->
 
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Iniciar Sesión
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h2>Login</h2>
+              <form action="">
+                <input type="text" placeholder="Usuario" id="usuario">
+                <input type="text" placeholder="Contraseña" id="contraseña">
+                <button class="btn" type="submit" id="entrar">Entrar</button>
+              </form>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
           </div>
         </div>
+      </div>
+      </div>
+      </div>
 
-        <div class="contenedor-mod">
-          <div class="modal">
-            <h2>Ingrese Sus Datos</h2>
-            <form action="">
-              <input type="text" placeholder="Nombre y Apellido" id="nombre" maxlength="30" minlength="5">
-              <input type="number" placeholder="DNI" id="dni" max="99999999" min="1000000">
-              <input type="email" placeholder="E-Mail" id="email">
-              <input type="number" placeholder="Celular" id="telefono">
-              <button class="btn" type="submit" id="ok">Registrarse</button>
-            </form>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        Registrarse
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h2>Ingrese Sus Datos</h2>
+              <form action="">
+                <input type="text" placeholder="Nombre y Apellido" id="nombre" maxlength="30" minlength="5">
+                <input type="number" placeholder="DNI" id="dni" max="99999999" min="1000000">
+                <input type="email" placeholder="E-Mail" id="email">
+                <input type="number" placeholder="Celular" id="telefono">
+                <button class="btn" type="submit" id="ok">Registrarse</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+      </div>
+    </nav>
+  </header>
 
-    <div class="titulos-principales">
-      <h1 class="titulo-grande">¿Tenés hambre? Nosotros la solución. Mirá las promos que tenemos.</h1>
+  <div class="titulos-principales">
+    <h1 class="titulo-grande">¿Tenés hambre? Nosotros la solución. Mirá las promos que tenemos.</h1>
+  </div>
+
+  <section>
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="true" data-r>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Front/img/carrusel/promohamburguesa.png" alt="Primera imagen" style="width:100%;">
+        </div>
+        <div class="carousel-item">
+          <img src="/Front/img/carrusel/promocafe.png" alt="Segunda imagen" style="width:100%;">
+        </div>
+        <div class="carousel-item">
+          <img src="/Front/img/carrusel/promopizza.png" alt="Tercera imagen" style="width:100%;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
 
-    <section>
-      <div id="carouselIndicators" class="carousel slide" data-bs-ride="true" data-r>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/Front/img/carrusel/promohamburguesa.png" alt="Primera imagen" style="width:100%;">
-          </div>
-          <div class="carousel-item">
-            <img src="/Front/img/carrusel/promocafe.png" alt="Segunda imagen" style="width:100%;">
-          </div>
-          <div class="carousel-item">
-            <img src="/Front/img/carrusel/promopizza.png" alt="Tercera imagen" style="width:100%;">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
+    <div>
+      <label>Buscar promociones<input type="text" id="name" name="name" /></label>
+      <label>Categorías<input type="text" id="name" name="name" /></label>
+    </div>
+  </section>
 
-      <div>
-        <label>Buscar promociones<input type="text" id="name" name="name" /></label>
-        <label>Categorías<input type="text" id="name" name="name" /></label>
-      </div>
-    </section>
-
-    <aside>
-      <p><strong>Enlaces Recomendados</strong></p>
-      <a href="https://www.selecciones.com.ar/" target="_blank">Selecciones</a>
-      <a href="https://saborgourmet.com/" target="_blank">Cómo elegir el mejor restaurante</a>
-      <a href="https://www.bodegasmezquita.com/" target="_blank">Consejos para crear una gran cena empresarial</a>
-    </aside>
+  <aside>
+    <p><strong>Enlaces Recomendados</strong></p>
+    <a href="https://www.selecciones.com.ar/" target="_blank">Selecciones</a>
+    <a href="https://saborgourmet.com/" target="_blank">Cómo elegir el mejor restaurante</a>
+    <a href="https://www.bodegasmezquita.com/" target="_blank">Consejos para crear una gran cena empresarial</a>
+  </aside>
   </div>
 
   <footer class="footer">
