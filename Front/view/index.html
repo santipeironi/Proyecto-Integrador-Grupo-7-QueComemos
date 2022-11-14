@@ -50,8 +50,11 @@
             <div class="modal-body">
               <h2>Login</h2>
               <form action="">
+                <label for="usuario">E-Mail</label>
                 <input type="text" placeholder="Usuario" id="usuario">
-                <input type="text" placeholder="Contraseña" id="contraseña">
+
+                <label for="contraseña">Contraseña</label>
+                <input type="password" placeholder="Contraseña" id="contraseña">
                 <button class="btn" type="submit" id="entrar">Entrar</button>
               </form>
 
@@ -132,12 +135,14 @@
         <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
-
-    <div>
-      <label>Buscar promociones<input type="text" id="name" name="name" /></label>
-      <label>Categorías<input type="text" id="name" name="name" /></label>
-    </div>
   </section>
+
+  <div class="promos">
+    <label>Buscar promos</label>
+    <input type="text" id="name" name="name" />
+    <label>Categorías</label>
+    <input type="text" id="name" name="name" />
+  </div>
 
   <aside>
     <p><strong>Enlaces Recomendados</strong></p>
@@ -145,7 +150,6 @@
     <a href="https://saborgourmet.com/" target="_blank">Cómo elegir el mejor restaurante</a>
     <a href="https://www.bodegasmezquita.com/" target="_blank">Consejos para crear una gran cena empresarial</a>
   </aside>
-  </div>
 
   <footer class="footer">
     <div class="footer_texto">

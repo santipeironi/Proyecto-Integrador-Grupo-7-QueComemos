@@ -5,8 +5,13 @@
 /* CUERPO - TÍTULOS PRINCIPALES */
 
 .backgroundc {
-    background: rgb(236,148,148);
-    background: linear-gradient(90deg, rgba(236,148,148,1) 0%, rgba(231,96,96,1) 38%, rgba(228,129,129,1) 100%); 
+  background: rgb(236, 148, 148);
+  background: linear-gradient(
+    90deg,
+    rgba(236, 148, 148, 1) 0%,
+    rgba(231, 96, 96, 1) 38%,
+    rgba(228, 129, 129, 1) 100%
+  );
 }
 
 .titulos-principales {
@@ -58,8 +63,6 @@ a:active {
   color: white;
 }
 
-
-
 @media screen and (max-width: 700px) {
   .nav-item {
     width: 100%;
@@ -68,4 +71,3 @@ a:active {
     width: 100%;
   }
 }
-
