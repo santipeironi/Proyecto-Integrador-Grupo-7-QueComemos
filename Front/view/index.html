@@ -25,83 +25,44 @@
 
   <header class="header">
     <nav class="barra-navegacion">
-      <p class="logo-empresa">QueComemos</p>
       <ul>
+        <p class="logo-empresa">QueComemos</p>
         <li class="nav-item"><a href="#">Inicio</a></li>
         <li class="nav-item"><a target="_blank" href="https://grupocom7.wordpress.com/">Quiénes Somos</a></li>
         <li class="nav-item"><a target="_blank" href="https://grupocom7.wordpress.com/contacto/">Contacto</a></li>
         <li class="nav-item"><a href="/Front/view/locales.html">Locales</a></li>
+        <button class="btn" type="submit" id="lanzar-modal">Iniciar Sesión</button>
+        <button class="btn" type="submit" id="modal-regist">Registrarse</button>
       </ul>
 
-      <!-- Formularios de registro y login -->
+       <!-- formularios y botones de registro y inicio de sesion -->
 
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Iniciar Sesión
-      </button>
+      <div class="contenedor-modal">
+        <div class="modal">
+          <h2>Login</h2>
+          <form action="">
+            <input type="text" placeholder="Usuario" id="usuario">
+            <input type="text" placeholder="Contraseña" id="contraseña">
+            <button class="btn" type="submit" id="entrar">Entrar</button>
+          </form>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2>Login</h2>
-              <form action="">
-                <label for="usuario">E-Mail</label>
-                <input type="text" placeholder="Usuario" id="usuario">
-
-                <label for="contraseña">Contraseña</label>
-                <input type="password" placeholder="Contraseña" id="contraseña">
-                <button class="btn" type="submit" id="entrar">Entrar</button>
-              </form>
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Enviar</button>
-            </div>
-          </div>
         </div>
       </div>
-      </div>
-      </div>
 
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-        Registrarse
-      </button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2>Ingrese Sus Datos</h2>
-              <form action="">
-                <input type="text" placeholder="Nombre y Apellido" id="nombre" maxlength="30" minlength="5">
-                <input type="number" placeholder="DNI" id="dni" max="99999999" min="1000000">
-                <input type="email" placeholder="E-Mail" id="email">
-                <input type="number" placeholder="Celular" id="telefono">
-                <button class="btn" type="submit" id="ok">Registrarse</button>
-              </form>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Enviar</button>
-          </div>
-        </div>
+    <div class="contenedor-mod">
+      <div class="modal">
+        <h2>Ingrese Sus Datos</h2>
+        <form action="">
+          <input type="text" placeholder="apellido y nombre" id="nombre" maxlength="30" minlength="5">
+          <input type="number" placeholder="dni" id="dni" max="99999999" min="1000000">
+          <input type="email" placeholder="email" id="email">
+          <input type="number" placeholder="telefono" id="telefono">
+          <button class="btn" type="submit" id="ok">Registrarse</button>
+        </form>
       </div>
-      </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
   <div class="titulos-principales">
     <h1 class="titulo-grande">¿Tenés hambre? Nosotros la solución. Mirá las promos que tenemos.</h1>
