@@ -4,6 +4,9 @@ Propuesta de página de reseñas de usuarios para restaurantes y servicios gastr
 # Nuestro Wordpress
 https://grupocom7.wordpress.com/
 
+# Video Cierra Sprint 2
+https://vimeo.com/manage/videos/770967649
+
 ## Participantes del equipo de trabajo ✒️     
 * Romero, Lucas Emanuel (Developer)    
 * Londero, Quimey Waldemar Teo (Developer)  
