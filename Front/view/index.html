@@ -22,53 +22,59 @@
 </head>
 
 <body class="backgroundc">
-
   <header class="header">
-    <nav class="barra-navegacion">
-      <ul>
-        <p class="logo-empresa">QueComemos</p>
-        <li class="nav-item"><a href="#">Inicio</a></li>
-        <li class="nav-item"><a target="_blank" href="https://grupocom7.wordpress.com/">Quiénes Somos</a></li>
-        <li class="nav-item"><a target="_blank" href="https://grupocom7.wordpress.com/contacto/">Contacto</a></li>
-        <li class="nav-item"><a href="/Front/view/locales.html">Locales</a></li>
-        <button class="btn" type="submit" id="lanzar-modal">Iniciar Sesión</button>
-        <button class="btn" type="submit" id="modal-regist">Registrarse</button>
+    <nav class="barra_nav">
+      <ul class="lista_nav">
+        <p class="titulo_sitio">QueComemos</p>
+        <li class="item_nav"><a class="enlace_nav" href="#">
+            <i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li class="item_nav"><a class="enlace_nav" target="_blank" href="https://grupocom7.wordpress.com/">
+            <i class="fa-solid fa-dragon"></i> Quiénes Somos</a></li>
+        <li class="item_nav"><a class="enlace_nav" target="_blank" href="https://grupocom7.wordpress.com/contacto/">
+            <i class="fa-regular fa-paper-plane"></i> Contacto</a></li>
+        <li class="item_nav"><a class="enlace_nav" href="/Front/view/locales.html">
+            <i class="fa-solid fa-shop"></i> Locales</a></li>
+
+        <li class="item_nav"><button class="boton" type="submit" id="lanzar-modal">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i> Iniciar Sesión</button></li>
+        <li class="item_nav"><button class="boton" type="submit" id="modal-regist">
+            <i class="fa-solid fa-user-plus"></i> Registrarse</button></li>
+
       </ul>
 
-       <!-- formularios y botones de registro y inicio de sesion -->
+      <!-- formularios y botones de registro y inicio de sesion -->
 
       <div class="contenedor-modal">
         <div class="modal">
           <h2>Login</h2>
           <form action="">
             <input type="text" placeholder="Usuario" id="usuario">
-            <input type="text" placeholder="Contraseña" id="contraseña">
-            <button class="btn" type="submit" id="entrar">Entrar</button>
+            <input type="password" placeholder="Contraseña" id="contraseña">
+            <button class="boton" type="submit" id="entrar">Entrar</button>
           </form>
 
         </div>
       </div>
 
-    <div class="contenedor-mod">
-      <div class="modal">
-        <h2>Ingrese Sus Datos</h2>
-        <form action="">
-          <input type="text" placeholder="apellido y nombre" id="nombre" maxlength="30" minlength="5">
-          <input type="number" placeholder="dni" id="dni" max="99999999" min="1000000">
-          <input type="email" placeholder="email" id="email">
-          <input type="number" placeholder="telefono" id="telefono">
-          <button class="btn" type="submit" id="ok">Registrarse</button>
-        </form>
+      <div class="contenedor-mod">
+        <div class="modal">
+          <h2>Ingrese Sus Datos</h2>
+          <form action="">
+            <input type="text" placeholder="apellido y nombre" id="nombre" maxlength="30" minlength="5">
+            <input type="number" placeholder="dni" id="dni" max="99999999" min="1000000">
+            <input type="email" placeholder="email" id="email">
+            <input type="number" placeholder="telefono" id="telefono">
+            <button class="boton" type="submit" id="ok">Registrarse</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
-
-  <div class="titulos-principales">
-    <h1 class="titulo-grande">¿Tenés hambre? Nosotros la solución. Mirá las promos que tenemos.</h1>
-  </div>
+    </nav>
+  </header>
 
   <section>
+    <div class="caja_subtitulo">
+      <h1 class="subtitulo">¿Tenés hambre? Nosotros la solución. Mirá las promos que tenemos.</h1>
+    </div>
     <div id="carouselIndicators" class="carousel slide" data-bs-ride="true" data-r>
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
@@ -99,22 +105,32 @@
   </section>
 
   <div class="promos">
-    <label>Buscar promos</label>
-    <input type="text" id="name" name="name" />
-    <label>Categorías</label>
-    <input type="text" id="name" name="name" />
+    <label class="promos_label" for="promo"> Buscar promos</label>
+    <input class="promos_input" type="text" id="promo" name="promo" />
+
+    <label class="promos_label" for="categorias"> Categorías</label>
+    <select class="promos_select" id="categorias" name="categorias">
+      <option selected>Elegir...</option>
+      <option value="1">Comida china</option>
+      <option value="2">Comida mexicana</option>
+      <option value="3">Restobar</option>
+      <option value="4">Sushi</option>
+    </select>
   </div>
 
-  <aside>
-    <p><strong>Enlaces Recomendados</strong></p>
-    <a href="https://www.selecciones.com.ar/" target="_blank">Selecciones</a>
-    <a href="https://saborgourmet.com/" target="_blank">Cómo elegir el mejor restaurante</a>
-    <a href="https://www.bodegasmezquita.com/" target="_blank">Consejos para crear una gran cena empresarial</a>
+  <aside class="aside1">
+    <p class="aside_titulo"><i class="fa-solid fa-link"></i> Páginas recomendadas <i class="fa-solid fa-link"></i></p>
+    <div class="aside_enlaces">
+    <a class="enlace_nav" href="https://www.selecciones.com.ar/" target="_blank">Selecciones</a>
+    <a class="enlace_nav" href="https://saborgourmet.com/" target="_blank">Cómo elegir el mejor restaurante</a>
+    <a class="enlace_nav" href="https://www.bodegasmezquita.com/" target="_blank">Vinos para acompañar tu gran cena
+      empresarial</a>
+    </div>
   </aside>
 
   <footer class="footer">
     <div class="footer_texto">
-      <u>Hecho con amor por el GrupoCom7 en Córdoba, Argentina, 2022.</u>
+      <u>Hecho con amor por ©GrupoCom7 en Córdoba, Argentina, 2022.</u>
     </div>
   </footer>
 
@@ -122,6 +138,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/573e96e899.js" crossorigin="anonymous"></script>
   <script src="/Front/js/script.js"></script>
   <script src="/Front/js/validaciones.js"></script>
   <script src="/Front/js/app.js"></script>

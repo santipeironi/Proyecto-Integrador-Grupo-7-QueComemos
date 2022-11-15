@@ -22,22 +22,46 @@
 </head>
 
 <body class="backgroundc">
-  <div class="contenedor-g">
-    <header>
-      <nav class="barra-navegacion">
-        <div class="logo-empresa">QueComemos</div>
-        <ul>
-          <li class="nav-item"><a href="/Front/view/index.html">Inicio</a></li>
-          <li class="nav-item"><a target="_blank" href="https://grupocom7.wordpress.com/">Quiénes Somos</a></li>
-          <li class="nav-item"><a target="_blank" href="https://grupocom7.wordpress.com/contacto/">Contacto</a></li>
-          <li class="nav-item"><a href="/Front/view/locales.html">Locales</a></li>
-        </ul>
-    </header>
+  <header class="header">
+    <nav class="barra_nav">
+      <ul class="lista_nav">
+        <p class="titulo_sitio">QueComemos</p>
+        <li class="item_nav"><a class="enlace_nav" href="/Front/view/index.html">
+            <i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li class="item_nav"><a class="enlace_nav" target="_blank" href="https://grupocom7.wordpress.com/">
+            <i class="fa-solid fa-dragon"></i> Quiénes Somos</a></li>
+        <li class="item_nav"><a class="enlace_nav" target="_blank" href="https://grupocom7.wordpress.com/contacto/">
+            <i class="fa-regular fa-paper-plane"></i> Contacto</a></li>
+        <li class="item_nav"><a class="enlace_nav" href="/Front/view/locales.html">
+            <i class="fa-solid fa-shop"></i> Locales</a></li>
 
-    <div>
-      <h1>Página en Progreso</h1>
+        <li class="item_nav"><button class="boton" type="submit" id="lanzar-modal">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i> Iniciar Sesión</button></li>
+        <li class="item_nav"><button class="boton" type="submit" id="modal-regist">
+            <i class="fa-solid fa-user-plus"></i> Registrarse</button></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <div>
+    <h1>Página en Progreso</h1>
+  </div>
+
+  <footer class="footer">
+    <div class="footer_texto">
+      <u>Hecho con amor por ©GrupoCom7 en Córdoba, Argentina, 2022.</u>
     </div>
+  </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/573e96e899.js" crossorigin="anonymous"></script>
+  <script src="/Front/js/script.js"></script>
+  <script src="/Front/js/validaciones.js"></script>
+  <script src="/Front/js/app.js"></script>
 </body>
 
 </html>

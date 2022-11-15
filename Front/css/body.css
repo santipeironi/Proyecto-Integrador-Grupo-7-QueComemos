@@ -14,38 +14,6 @@
   );
 }
 
-.titulos-principales {
-  display: flex;
-  flex-flow: row wrap;
-  font-family: "Reem Kufi", sans-serif;
-  justify-content: center;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.titulo-grande {
-  font-size: 2rem;
-}
-
-aside {
-  background-color: rgb(181, 18, 18);
-}
-
-aside p {
-  color: rgb(232, 214, 214);
-  font-size: 1.5em;
-  font-family: "Reem Kufi", sans-serif;
-  text-align: center;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.5em;
-  font-family: "Reem Kufi", sans-serif;
-  margin: 5px;
-}
-
 a:link,
 a:visited {
   background-color: rgb(194, 59, 59);
@@ -57,17 +25,77 @@ a:visited {
   display: inline-block;
 }
 
-a:hover,
-a:active {
-  background-color: rgb(84, 4, 4);
-  color: white;
+.caja_subtitulo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.subtitulo {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 2em;
+}
+
+.promos {
+  margin: 1.5em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.promos_label {
+  font-size: 1.2rem;
+  font-family: "Reem Kufi", sans-serif;
+  color: rgb(232, 214, 214);
+  margin: 0.4em;
+}
+
+.promos_input {
+  font-size: 1.2rem;
+  font-family: "Reem Kufi", sans-serif;
+  background-color: rgb(194, 59, 59);
+  color: rgb(232, 214, 214);
+  margin-right: 0.6em;
+}
+
+.promos_select {
+  font-size: 1.2rem;
+  font-family: "Reem Kufi", sans-serif;
+  background-color: rgb(194, 59, 59);
+  color: rgb(232, 214, 214);
+}
+
+.aside1 {
+  background-color: rgb(181, 18, 18);
+  padding: 0.6em;
+}
+
+.aside_titulo {
+  color: rgb(232, 214, 214);
+  font-size: 1.5em;
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+}
+
+.aside_enlaces {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1em;
 }
 
 @media screen and (max-width: 600px) {
-  .nav-item {
+  .item_nav {
     width: 75%;
   }
-  .btn {
+
+  .boton {
+    width: 75%;
+  }
+
+  .promos_input {
     width: 75%;
   }
 }
