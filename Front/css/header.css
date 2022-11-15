@@ -9,6 +9,7 @@
   background-color: rgb(161, 22, 64);
   color: rgba(255, 255, 255, 0.877);
   justify-content: space-between;
+  padding-top: 1em;
 }
 
 .lista_nav {
