@@ -23,7 +23,7 @@ https://grupocom7.wordpress.com/
 * MySQL
 * Python
 
-##¿Por qué estamos eligiendo las tecnologías que elegimos?
+## ¿Por qué estamos eligiendo las tecnologías que elegimos?
 +HTML (construcción básica del sitio)
 +CSS (construcción básica del sitio)
 +JS (construcción básica del sitio)
