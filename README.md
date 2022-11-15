@@ -22,3 +22,12 @@ https://grupocom7.wordpress.com/
 * Bootstrap
 * MySQL
 * Python
+
+##¿Por qué estamos eligiendo las tecnologías que elegimos?
++HTML (construcción básica del sitio)
++CSS (construcción básica del sitio)
++JS (construcción básica del sitio)
++Bootstrap (para usar varios de sus recursos y dejar la página más atractiva)
++Python (para el backend)
++MySQL (para la base de datos)
+Porque… de acuerdo a lo que estuvimos aprendiendo y a los conocimientos que ya adquirimos podemos manejar más facilmente esas tecnologías, ahorrándonos tiempo y trabajo.
