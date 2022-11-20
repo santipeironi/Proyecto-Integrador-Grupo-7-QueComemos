@@ -15,8 +15,7 @@ https://vimeo.com/manage/videos/770967649
 * Monzón, Silvia Carina (Developer)     
 * Paredes, Jimena Alejandra (Developer)     
 * Peironi, Santiago (Developer y Scrum Master)     
-* Peralta, Katherinne (Developer)    
-* Cisterna, Mariano (Developer)    
+* Peralta, Katherinne (Developer)
 
 ## Será construido con 🛠️
 * HTML
