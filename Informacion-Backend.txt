@@ -1,0 +1,8 @@
+-- ACTIVIDADES REALIZADAS EN EL BACKEND --
+
+Hechas por Oscar Romero:
+
+- CRUD funcional para la tabla de 'usuarios'.
+- Diagrama de Casos de Usos.
+
+
